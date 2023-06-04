@@ -7,12 +7,9 @@ body h2{
   font-weight: bold;
   font-size: 30px;
 }
-  
-  
-  
 .wrapper-carte{
   display: inline-block;
-    text-align: center;
+  text-align: center;
     background-color: rgb(217, 217, 217);
     margin: 1% 2%;
     width: 16%;
@@ -46,6 +43,10 @@ body h2{
 .book-title{
     position: relative;
 }
+.book-image{
+  width: 80%;
+  height: 50%;
+}
 .home-add-button{
     position: relative;
     background-color: rgb(223,224,162);
@@ -61,4 +62,20 @@ body h2{
 }
 .home-add-button p{
   display: inline-block;
+}
+
+.bid-detail{
+  display: flex;
+  align-items: center;
+}
+
+.bid-detail p{
+  display: inline-block;
+  color: darkred;
+  margin-right: 25%;
+}
+.bid-time{
+  display: inline-block;
+  width: 10%;
+  height: 10%;
 }
