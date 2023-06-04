@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(204, 189, 189);
+  }
+body h2{
+  margin-left: 3%;
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 30px;
+}
+.wrapper-carte{
+  display: inline-block;
+  text-align: center;
+    background-color: rgb(217, 217, 217);
+    margin: 1% 2%;
+    width: 16%;
+    height: 50%
+}
+.wrapper-carte img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper-carte h5{
+  font-weight: bold;
+}
+  
+.card-detail{
+  margin-top: 5%;
+  display:flex;
+  justify-content: space-between;
+}
+.card-detail p{
+  margin: 0 7%;
+  margin-bottom: 5%;
+}
+
+.wrapper_ensemble_cartes{
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: rbg(204, 189, 189);
+}
+
+.book-title{
+    position: relative;
+}
+.book-image{
+  width: 80%;
+  height: 50%;
+}
+.home-add-button{
+    position: relative;
+    background-color: rgb(223,224,162);
+    margin-top: 1%;
+    width: 35%;
+    cursor:pointer;
+}
+  
+.home-add-button img{
+  display: inline-block;
+  width: 20%;
+  height: 50%;
+}
+.home-add-button p{
+  display: inline-block;
+}
+
+.bid-detail{
+  display: flex;
+  align-items: center;
+}
+
+.bid-detail p{
+  display: inline-block;
+  color: darkred;
+  margin-right: 25%;
+}
+.bid-time{
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+}

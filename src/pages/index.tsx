@@ -7,6 +7,7 @@ import List from './list/[id]';
 import Register from './user/register';
 import Login from './user/login';
 import User from './user/user';
+import Bid from './bid';
 import Page404 from './page404';
 import Item from './item/[id]';
 import { useAuth } from '../context/Auth';
