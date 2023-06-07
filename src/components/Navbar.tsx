@@ -25,7 +25,7 @@ function NavBar() {
                         </a>
                         <div className="flex ml-16 items-center w-full">
                             <div className="flex space-x-4 w-full">
-                                <a href="/enchères" className='px-3 py-2'>
+                                <a href="/enchères" className='px-3 py-2 mr-14'>
                                     <img className="block h-14" src={AUCTION} alt="AUCTION"/>
                                 </a>
                                 <div className='flex items-center w-5/12'>
