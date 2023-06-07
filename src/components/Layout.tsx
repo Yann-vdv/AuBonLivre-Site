@@ -7,7 +7,7 @@ function Layout() {
   return (
     <div className="">
       <NavBar/>
-      <div className='flex'>
+      <div className='flex w-full' style={{backgroundColor: "#CCBDBD"}}>
         <div className='w-60'>
           <SideBar/>
         </div>

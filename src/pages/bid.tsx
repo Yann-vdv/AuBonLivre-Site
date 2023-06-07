@@ -1,8 +1,8 @@
 import React from 'react';
 import { useAuth } from '../context/Auth';
-import '../styles/home.css';
 import Gallery from "../components/Gallery";
 import { book } from "../models/models";
+import SUBTITLE from "../images/icons/subTitle.png"
 
 function Bid() {
 
@@ -70,8 +70,9 @@ function Bid() {
   ];
 
   return (
-    <div className="Home"> 
-      <h2>Enchères</h2>
+    <div className="w-full"> 
+      <h2 className='font-bold pl-10 pt-6' style={{fontSize:'2.2rem'}}>Enchères</h2>
+      <img src={SUBTITLE} className="h-3 w-72 opacity-60 pl-8 mt-1"/>
       <Gallery products={bookList.concat(bookList)} bid={true} />
   </div>
   );
