@@ -2,8 +2,6 @@ import React from 'react';
 import Home from './home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from '../components/Layout';
-import Lists from './list';
-import List from './list/[id]';
 import Register from './user/register';
 import Login from './user/login';
 import User from './user/user';
@@ -24,24 +22,20 @@ const router = createBrowserRouter([
       errorElement: <Page404 />,
       children: [
         {
-            index: true,
-            element: <Home />,
+          index: true,
+          element: <Home />,
         },
         {
-            path: "listes",
-            element: <Lists />,
+          path: "enchères",
+          element: <Bid/>,
         },
         {
-            path: "liste/:id",
-            element: <List />,
+          path: "item/:id",
+          element: <Item />,
         },
         {
-            path: "item/:id",
-            element: <Item />,
-        },
-        {
-            path: "profil",
-            element: <User />,
+          path: "profil",
+          element: <User />,
         }
       ]
     }

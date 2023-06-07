@@ -14,3 +14,24 @@ export type user = {
     lastName: string
     email: string
 }
+
+export type book = {
+    id: number
+    title: string
+    author: string
+    image: string
+    description ? : string
+    category ? : string
+    condition ? : string
+    startingPrice: number
+    bid ? : bid
+}
+
+export type bid = {
+    id: number
+    amount: number
+    bidderId: number
+    bookId: number
+    createdAt ? : Date
+    endAt: Date
+}
