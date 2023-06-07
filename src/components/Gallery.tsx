@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../context/Auth";
-import BAG from "../images/icons/sac-de-courses.png";
-import TIME from "../images/icons/time.png";
+import BAG from "../images/icons/shopping-bag.png";
+import TIME from "../images/icons/hourglass.png";
 import { book } from "../models/models";
 
 type props = {
@@ -17,7 +17,10 @@ function Gallery(props: props) {
   const add = () => {};
 
   const getTimeLeft = (time: Date) => {
-    return `${time.getHours().toFixed(2)}h${time.getMinutes().toFixed(2)}min${time.getSeconds().toFixed(2)}sec`
+    const hours = time.getHours() < 10 ? `0${time.getHours()}` : time.getHours();
+    const minutes = time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes();
+    const seconds = time.getSeconds() < 10 ? `0${time.getSeconds()}` : time.getSeconds();
+    return `${hours}h ${minutes}min ${seconds}sec`
   }
 
   return (
