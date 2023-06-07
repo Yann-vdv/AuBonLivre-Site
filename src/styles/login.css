@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(204, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.page-login{
+    background-color: rgb(198, 160, 160);
+    width: 100%;
+    height: 60%;
+    margin-top: 20%;
+    border-radius: 10%;
+}
+
+.login-explain{
+    display: block;
+    margin-top: 8%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-email{
+    margin-top: 8%;
+}
+.login-email input{
+    border-radius: 20px;
+    width: 80%;
+}
+
+.login-password{
+    margin-top: 8%;
+}
+.login-password input{
+    width: 80%;
+    border-radius: 20px;
+}
+
+.login-submit{
+    background-color: rgb(51, 163, 178);
+    width: 60%;
+    margin-top: 8%;
+    color: white;
+    border-radius: 10px;
+}
+
+.login-signin{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    color: rgb(29, 94, 143);
+    cursor: pointer;
+}
+
+.login-or{
+    position: relative;
+    margin-top: 3%;
+}
