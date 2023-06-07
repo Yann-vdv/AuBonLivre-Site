@@ -21,7 +21,7 @@ function NavBar() {
                 <div className="relative flex items-center justify-between">
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <a href="/" className="flex flex-shrink-0">
-                            <img className="block h-24" src={LOGO} alt="LISTO"/>
+                            <img className="block w-60" src={LOGO} alt="LISTO"/>
                         </a>
                         <div className="flex ml-16 items-center w-full">
                             <div className="flex space-x-4 w-full">
@@ -74,7 +74,7 @@ function NavBar() {
                     </div>
                 </div>
             </div>
-      </nav>      
+        </nav>      
     );
   }
   
