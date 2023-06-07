@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(204, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.page-register{
+    background-color: rgb(198, 160, 160);
+    width: 100%;
+    height: 60%;
+    margin-top: 20%;
+    border-radius: 10%;
+}
+
+.register-explain{
+    display: block;
+    margin-top: 8%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-name{
+    margin-top: 5%;
+}
+
+.register-name input{
+    border-radius: 20px;
+    width: 80%;
+}
+.register-email{
+    margin-top: 3%;
+}
+.register-email input{
+    border-radius: 20px;
+    width: 80%;
+}
+
+.register-password{
+    margin-top: 3%;
+}
+.register-password input{
+    width: 80%;
+    border-radius: 20px;
+}
+
+.register-submit{
+    background-color: rgb(51, 163, 178);
+    width: 60%;
+    margin-top: 8%;
+    color: white;
+    border-radius: 10px;
+}
+
+.register-login{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    color: rgb(29, 94, 143);
+    cursor: pointer;
+}
