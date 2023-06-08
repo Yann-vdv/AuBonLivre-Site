@@ -23,12 +23,12 @@ function Login() {
     event.preventDefault();
     userRequest.login(loginData)
     .then((res) => {
-      console.log('res',res)
+      console.log(res)
+      login({logged:true, id:1, token:'token'})
     })
     .catch((err) => {
 
     })
-    // login({logged:true, id:1, token:'token'})
   }
 
   return (

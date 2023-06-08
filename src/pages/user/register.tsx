@@ -22,10 +22,10 @@ function Register() {
     event.preventDefault();
     userRequest.register(registerData)
     .then((res) => {
-      console.log('res',res)
+      navigate('/')
     })
     .catch((err) => {
-
+      console.error('Erreur inscription',err);
     })
   }
 

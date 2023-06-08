@@ -8,11 +8,12 @@ type registerUser = {
 }
 
 const register = (data:registerUser) => {
-    return requestInstance.post('register',data);
+    return requestInstance.post('users/register',data);
 }
 
 const login = (data:{email:string,password:string}) => {
-    return requestInstance.post('login',data);
+    console.log('test',data)
+    return requestInstance.post('users/login',data);
 }
 
 const userRequest = {
