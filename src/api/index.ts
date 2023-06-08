@@ -12,7 +12,7 @@ const RequestInterceptor = ({ children }: any) => {
   const { user,logout } = useAuth();
 
   requestInstance.interceptors.request.use(function (config) {
-    config.headers['Authorization'] = `bearer ${user.logged ? `Bearer ${user.token}` : ''}`
+    config.headers['Authorization'] = `bearer ${user.logged ? user.token : ''}`
     return config;
   }, function (error) {
     if ((error.response.status === 500 || error.response.status === 401) && user.logged) {
