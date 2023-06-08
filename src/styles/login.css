@@ -1,16 +1,14 @@
-body{
+.page{
     background-color: rgb(204, 189, 189);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
   }
 
 .page-login{
     background-color: rgb(198, 160, 160);
-    width: 100%;
-    height: 60%;
-    margin-top: 20%;
     border-radius: 10%;
 }
 
@@ -27,6 +25,7 @@ body{
 .login-email input{
     border-radius: 20px;
     width: 80%;
+    padding: 0px 10px;
 }
 
 .login-password{
@@ -35,6 +34,7 @@ body{
 .login-password input{
     width: 80%;
     border-radius: 20px;
+    padding: 0px 10px;
 }
 
 .login-submit{

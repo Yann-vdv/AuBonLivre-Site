@@ -4,11 +4,12 @@ import AUCTION from "../images/icons/auction.png"
 import USER from "../images/icons/user.png";
 import SEARCH from "../images/icons/magnifier.png"
 import SHOPBAG from "../images/icons/online-shopping.png"
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/Auth';
 
 function NavBar() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const [showUserMenu, setShowUserMenu] = React.useState(false);
     const [showShopBagMenu, setShowShopBagMenu] = React.useState(false);
@@ -52,7 +53,7 @@ function NavBar() {
                             {showUserMenu &&
                             <div className="absolute right-16 z-10 mt-2 w-36 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
                                 <a href="/profil" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" id="user-menu-item-0">Votre Profile</a>
-                                <button className="flex block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full" role="menuitem" id="user-menu-item-2" onClick={() => logout()}>Déconnexion</button>
+                                <button className="flex block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full" role="menuitem" id="user-menu-item-2" onClick={() => {logout();navigate('/')}}>Déconnexion</button>
                             </div>}
                             {showShopBagMenu &&
                             <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>

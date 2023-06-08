@@ -1,10 +1,10 @@
 import { requestInstance } from "."
 
 type registerUser = {
-    firstName: string
-    lastName: string
+    username: string
     email: string
     password: string
+    password2: string
 }
 
 const register = (data:registerUser) => {

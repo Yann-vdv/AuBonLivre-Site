@@ -21,46 +21,48 @@ function Login() {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    // userRequest.login(loginData)
-    // .then((res) => {
-    //   console.log('res',res)
-    // })
-    // .catch((err) => {
+    userRequest.login(loginData)
+    .then((res) => {
+      console.log('res',res)
+    })
+    .catch((err) => {
 
-    // })
-    login({logged:true, id:1, token:'token'})
+    })
+    // login({logged:true, id:1, token:'token'})
   }
 
   return (
-    <div className="page-login">
-        <h2>Bonjour!</h2>
+    <div className="page">
+      <div className="page-login pt-4 pb-1">
+        <h2 className='font-semibold text-xl'>Bonjour!</h2>
         <p className='login-explain'>Connectez-vous pour découvrir toutes nos fonctionnalités</p>
-      <div className="login-form">
-        <form onSubmit={handleSubmit}>
-          <div className='login-email'>
-            <label htmlFor="email">E-mail</label>
+        <div className="login-form">
+          <form onSubmit={handleSubmit} autoComplete="on">
+            <div className='login-email'>
+              <label htmlFor="email">E-mail</label>
+              <div>
+                <input id="email" name="email" type="email" autoComplete="email" required
+                  value={loginData.email} onChange={(e) => setLoginData({...loginData, email: e.target.value})}
+                />
+              </div>
+            </div>
+
             <div>
-              <input id="email" name="email" type="email" autoComplete="email" required
-                value={loginData.email} onChange={(e) => setLoginData({...loginData, email: e.target.value})}
-              />
+              <div className='login-password'>
+                <label htmlFor="password">Mot de passe</label>
+                <input id="password" name="password" type={showPass ? "text" : "password"} required
+                  value={loginData.password} onChange={(e) => setLoginData({...loginData, password: e.target.value})}
+                />
+              </div>
             </div>
-          </div>
 
-          <div>
-            <div className='login-password'>
-              <label htmlFor="password">Mot de passe</label>
-              <input id="password" name="password" type={showPass ? "text" : "password"} required
-                value={loginData.password} onChange={(e) => setLoginData({...loginData, password: e.target.value})}
-              />
+            <div>
+              <button className='login-submit' type="submit">Connexion</button>
             </div>
-          </div>
-
-          <div>
-            <button className='login-submit' type="submit" >Connexion</button>
-          </div>
-        </form>
-        <p className='login-or'>------------------  ou  ------------------</p>
-        <p className='login-signin' onClick={() => navigate('inscription')}>Pas de compte ?</p>
+          </form>
+          <p className='login-or'>------------------  ou  ------------------</p>
+          <p className='login-signin' onClick={() => navigate('inscription')}>Pas de compte ?</p>
+        </div>
       </div>
     </div>
   );

@@ -3,9 +3,9 @@ import { useAuth } from "../context/Auth";
 
 const requestInstance = axios.create({
   //PROD
-  // baseURL: "https://shoplisto.herokuapp.com/",
+  baseURL: "https://myawsomebooks.herokuapp.com/",
   //DEV
-  baseURL: "http://localhost:3001/",
+  // baseURL: "http://localhost:3001/",
 });
 
 const RequestInterceptor = ({ children }: any) => {
